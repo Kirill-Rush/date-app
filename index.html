@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <title>Date App</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <div class="container" align="center" style="margin-top:5vh">
+    <span>Данное приложение позволит определить номер дня и недели в году,</span>
+    <br>
+    <span> а также оставшееся время до введенной даты</span>
+  </div>
+  <div class="container" align="center" style="margin-top:15vh;">
+      <div id="description">
+        <p>
+          <span>Введите интересующую Вас дату:</span>
+        </p>
+      </div>
+      <input type="data" name="data" minlength="10" maxlength="10" id="data" autocomplete="off" style="width:20%;"/>
+  </div>
+  <br>
+  <div class="container correctdata-noshow" id="anyinfo">
+    <div class="row centered">
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-8">
+        <div id="output-info"></div>
+      </div>
+    </div>
+    <br>
+    <div class="correctdata-noshow" id="showinfo-block">
+      <div class="row centered">
+        <div class="col-lg-4">
+        </div>
+        <div class="col-lg-8">
+          <div id="day-number"></div>
+          <div id="week-number"></div>
+        </div>
+      </div>
+      <br><br>
+      <div align="center">
+        <p id="time-left"><b>До выбранной даты осталось: </b></p>
+      </div>
+      <div class="row centered">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+          <span id="counter_years"></span>
+          <br>
+          <p id="addition_to_value">Лет</p>
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+          <span id="counter_days"></span>
+          <br>
+          <p id="addition_to_value">Дней</p>
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+          <span id="counter_hours"></span>
+          <br>
+          <p id="addition_to_value">Часов</p>
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+          <span id="counter_minutes"></span>
+          <br>
+          <p id="addition_to_value">Минут</p>
+        </div>
+        <div class="col-lg-1" id="block_of_time">
+          <span id="counter_seconds"></span>
+          <br>
+          <p id="addition_to_value">Секунд</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
