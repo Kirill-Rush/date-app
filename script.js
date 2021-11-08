@@ -58,7 +58,7 @@ $(document).ready(function() {
         }
       }
       else {
-        $('#output-info').html("<b style=\"color: red;\">Дата введена неверно</b>");
+        $('#output-info').html("<b style=\"color: red;\">Введите дату формата ДД-ММ-ГГГГ</b>");
       }
     }
 
